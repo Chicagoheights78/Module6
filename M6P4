@@ -1,0 +1,16 @@
+# M6P4
+tickets = int(input("Enter ticket quantity: "))
+if tickets >= 25:    
+    ticket_price = 50
+else:
+     if tickets >= 10:        
+         ticket_price = 60
+     else:
+         if tickets >= 5:        
+             ticket_price = 70         
+         else:
+             ticket_price = 75
+total_cost = tickets * ticket_price
+print(f"Number of tickets: {tickets:>10}")
+print(f"Price per ticket:  ${ticket_price:10.2f}")
+print(f"Total cost:        ${total_cost:10.2f}")

@@ -1,0 +1,14 @@
+# M6P5
+lastname = input("Enter employee last name: ")
+salary = float(input("Enter Salary: "))
+joblevel = int(input("Enter job level: "))
+if joblevel >= 10:    
+    bonus_rate = .25
+else:
+     if joblevel >= 5:        
+         bonus_rate = .20
+     else:
+         bonus_rate = .10        
+bonus = bonus_rate * salary 
+print(f"Employee last name: {lastname}")
+print(f"Bonus:  ${bonus:10.2f}")
