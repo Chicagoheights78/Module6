@@ -1,13 +1,13 @@
 # M6P3
 term = input("Enter CD Term (e.g., 10, 5): ")
-principal = float(input("Enter principal amount: "))
+principal = int(input("Enter principal amount: "))
 if principal > 100000 and term == "5":    
     interest_rate = .06
 else:
-     if principal >= 50000 and term == "10":        
+     if principal >= 50000 and principal <= 100000 and term == "10":
          interest_rate = .05
      else:
-         if principal >= 50000 and term == "5":   
+         if principal >= 50000 and principal <= 100000 and term == "5":
              interest_rate = .04
          else:
              interest_rate = .02
